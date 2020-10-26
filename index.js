@@ -19,7 +19,7 @@ function nextsequence() {
 
 
 }
-$(document).keydown(function (e) {
+$("h1").click(function (e) {
     if (started === false) {
         $("#level-title").text("Level " + level);
         nextsequence();
@@ -63,5 +63,5 @@ function startover() {
     usercolor;
     level = 0;
     started = false;
-    $("#level-title").text("Game Over Press Any Key to Continue");
+    $("#level-title").text("Game Over Press Here  to Continue");
 }
